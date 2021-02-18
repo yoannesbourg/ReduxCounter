@@ -7,7 +7,7 @@ const counterReducer = (state = 0, action) => {
             return state - 1
 
         case 'moveRight':
-            console.log('right')
+            console.log('left property +10px')
 
         default: 
             return state;
