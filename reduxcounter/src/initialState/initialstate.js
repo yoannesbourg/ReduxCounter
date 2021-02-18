@@ -1,4 +1,4 @@
 export const initialState = {
-    x: 100,
-    y: 10
+    x: 220,
+    y: 170
 }
