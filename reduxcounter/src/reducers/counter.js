@@ -3,12 +3,16 @@ const counterReducer = (state = 0, action) => {
         case 'increment':
             return state + 1
         
-        case 'increment':
+        case 'decrement':
             return state - 1
+
+        case 'moveRight':
+            console.log('right')
 
         default: 
             return state;
     }
 }
+
 
 export default counterReducer

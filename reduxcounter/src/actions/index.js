@@ -3,3 +3,15 @@ export const increment = () => {
         type: 'increment'
     }
 }
+
+export const decrement = () => {
+    return {
+        type: 'decrement'
+    }
+}
+
+export const moveRight = () => {
+    return {
+        type: 'moveRight'
+    }
+}
