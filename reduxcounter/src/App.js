@@ -5,7 +5,8 @@ import {increment, decrement} from './actions'
 import Board from './components/board'
 
 function App() {
-  const counter = useSelector(state => state.x)
+  const x = useSelector(state => state.x)
+  const y = useSelector(state => state.y)
   const dispatch = useDispatch()
  
 
@@ -13,10 +14,18 @@ function App() {
     <div className="App">
       <Board />
       
-      <h1> Counter {counter}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-
+      <h1> X {x}</h1>
+      <h1> Y {y}</h1>
+      <div>
+        <button onClick={() => dispatch(decrement())}>Up</button>
+      </div>
+      <div>
+        <button onClick={() => dispatch(decrement())}>Left</button>
+        <button onClick={() => dispatch(increment())}>Right</button>
+      </div>
+      <div>
+        <button onClick={() => dispatch(decrement())}>Down</button>
+      </div>
     </div>
   );
 }

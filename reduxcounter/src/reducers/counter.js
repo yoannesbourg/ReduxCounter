@@ -1,17 +1,30 @@
 import { initialState } from '../initialState/initialstate'
 
-const counterReducer = (state = initialState, action) => {
+export const counterX = (state = initialState.x, action) => {
     switch(action.type){
-        case 'increment':
-            return state.x + 1
+        case 'go_right':
+            return state + 1
         
         case 'decrement':
-            return state.x - 1
+            return state - 1
 
         default: 
-            return state.x;
+            return state;
+    }
+}
+
+export const counterY = (state = initialState.y, action) => {
+    switch(action.type){
+        case 'increment':
+            return state + 1
+        
+        case 'decrement':
+            return state - 1
+
+        default: 
+            return state;
     }
 }
 
 
-export default counterReducer
+

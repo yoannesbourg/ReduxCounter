@@ -1,8 +1,9 @@
-import counterReducer from './counter'
+import {counterX, counterY} from './counter'
 import {combineReducers} from 'redux'
 
 const allReducers = combineReducers({
-    x: counterReducer,
+    x: counterX,
+    y: counterY
 })
 
 export default allReducers

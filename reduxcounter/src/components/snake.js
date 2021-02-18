@@ -3,12 +3,12 @@ import '../app.css'
 import {useSelector,  useDispatch} from 'react-redux'
 
 const Snake = () => {
-    const counter = useSelector(state => state.x)
-    const counterPixels = counter + 'px'
+    const horizontalX = useSelector(state => state.x)
+    const horizontalPixels = horizontalX + 'px'
     return (
         <div 
             className="snake"
-            style={{ 'left' : counterPixels }}
+            style={{ 'left' : horizontalPixels }}
         ></div>
     )
 }
