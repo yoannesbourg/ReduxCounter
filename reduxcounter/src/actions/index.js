@@ -9,9 +9,3 @@ export const decrement = () => {
         type: 'decrement'
     }
 }
-
-export const moveRight = () => {
-    return {
-        type: 'moveRight'
-    }
-}

@@ -1,16 +1,15 @@
-const counterReducer = (state = 0, action) => {
+import { initialState } from '../initialState/initialstate'
+
+const counterReducer = (state = initialState, action) => {
     switch(action.type){
         case 'increment':
-            return state + 1
+            return state.x + 1
         
         case 'decrement':
-            return state - 1
-
-        case 'moveRight':
-            console.log('left property +10px')
+            return state.x - 1
 
         default: 
-            return state;
+            return state.x;
     }
 }
 
