@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
 import {useSelector,  useDispatch} from 'react-redux'
-import {increment, decrement} from './actions'
+import {goRight, goLeft, goDown, goUp} from './actions'
 import Board from './components/board'
 
 function App() {
@@ -17,14 +17,14 @@ function App() {
       <h1> X {x}</h1>
       <h1> Y {y}</h1>
       <div>
-        <button onClick={() => dispatch(decrement())}>Up</button>
+        <button onClick={() => dispatch(goUp())}>Up</button>
       </div>
       <div>
-        <button onClick={() => dispatch(decrement())}>Left</button>
-        <button onClick={() => dispatch(increment())}>Right</button>
+        <button onClick={() => dispatch(goLeft())}>Left</button>
+        <button onClick={() => dispatch(goRight())}>Right</button>
       </div>
       <div>
-        <button onClick={() => dispatch(decrement())}>Down</button>
+        <button onClick={() => dispatch(goDown())}>Down</button>
       </div>
     </div>
   );

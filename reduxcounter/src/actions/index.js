@@ -1,11 +1,23 @@
-export const increment = () => {
+export const goRight = () => {
     return {
-        type: 'increment'
+        type: 'GO_RIGHT'
     }
 }
 
-export const decrement = () => {
+export const goLeft = () => {
     return {
-        type: 'decrement'
+        type: 'GO_LEFT'
+    }
+}
+
+export const goUp = () => {
+    return {
+        type: 'GO_UP'
+    }
+}
+
+export const goDown = () => {
+    return {
+        type: 'GO_DOWN'
     }
 }
